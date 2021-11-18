@@ -9,8 +9,9 @@
     </a>
   </div>
 
-  <table class="table mt-3">
+  <table class="table" id="table">
     <thead>
+      
       <tr>
         <th scope="col">ID Laporan</th>
         <th scope="col">Sarana</th>
@@ -26,6 +27,8 @@
       </tr>
     </thead>
     <tbody>
+      
+
       <?php foreach ($laporan as $row) : ?>
         <tr>
           <th scope="row"><?= $row['id_laporan'] ?></th>
@@ -52,7 +55,7 @@
       <?php endforeach; ?>
     </tbody>
   </table>
-  <?= $pager->links('default', 'bootstrap_pagination') ?>
+   <!-- $pager->links('default', 'bootstrap_pagination') ?> -->
 </div>
 
 <?= $this->endSection('content') ?>
