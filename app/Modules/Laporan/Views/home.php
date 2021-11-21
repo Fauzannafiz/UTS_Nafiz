@@ -4,6 +4,16 @@
 <div class="container mt-5">
   <div class="d-flex justify-content-between">
     <h2>Database Laporan Internet</h2>
+    
+    <a href="<?= base_url('/LaporanFpdf') ?>">
+      <i class="fas fa-file-pdf" aria-current="page"> FPDF</i>
+    </a>
+    <a href="<?= base_url('/LaporanSpreadsheet') ?>">
+      <i class="fas fa-file-excel" aria-current="page"> Spreadsheet</i>
+    </a>
+    <a href="<?= base_url('/LaporanWord') ?>">
+      <i class="fas fa-file-word" aria-current="page"> Word</i>
+    </a>
     <a href="<?= base_url('Laporan/tambah') ?>">
       <button class="btn btn-primary">Tambah</button>
     </a>
@@ -55,7 +65,7 @@
       <?php endforeach; ?>
     </tbody>
   </table>
-   <!-- $pager->links('default', 'bootstrap_pagination') ?> -->
+   <?= $pager->links('default', 'bootstrap_pagination') ?>
 </div>
 
 <?= $this->endSection('content') ?>

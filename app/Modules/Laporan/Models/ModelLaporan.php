@@ -13,7 +13,7 @@ class ModelLaporan extends Model {
         ->join('sarana', 'laporan.id_sarana = sarana.id_sarana')
         ->join('cs', 'laporan.id_cs = cs.id_cs')
         ->join('status', 'laporan.id_status = status.id_status')
-        ->paginate(2);
+        ->paginate(10);
         // ->get()
         // ->getResultArray();
         

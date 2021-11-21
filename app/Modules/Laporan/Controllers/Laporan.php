@@ -8,7 +8,7 @@ class Laporan extends BaseController
   public function index() {
     $laporan = new ModelLaporan();
     $data['laporan'] = $laporan->getLaporan();
-    // $data['pager'] = $laporan->pager;
+    $data['pager'] = $laporan->pager;
     $home = 'App\Modules\Laporan\Views\home';
     return view($home, $data);
   }

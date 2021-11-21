@@ -7,21 +7,11 @@
         <script src="https://kit.fontawesome.com/8ce5022591.js" crossorigin="anonymous"></script>
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css">
 
         <title>Tambah Laporan Internet</title>
     </head>
 
     <body>
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-        <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
-        
-        <script>
-            $(document).ready(function(){
-                $('#table').DataTable();
-            })
         </script>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-inverse" style="background-color: #ff5148;">

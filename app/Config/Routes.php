@@ -35,6 +35,11 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', '\App\Modules\Laporan\Controllers\Laporan::index');
 $routes->get('/Laporan', '\App\Modules\Laporan\Controllers\Laporan::index');
+
+$routes->get('/LaporanFpdf', '\App\Modules\Laporan\Controllers\LaporanFpdf::index');
+$routes->get('/LaporanSpreadsheet', '\App\Modules\Laporan\Controllers\LaporanSpreadsheet::index');
+$routes->get('/LaporanWord', '\App\Modules\Laporan\Controllers\LaporanWord::index');
+
 $routes->get('/Laporan/tambah', '\App\Modules\Laporan\Controllers\Laporan::tambah/', ['filter' => 'role:admin']);
 $routes->add('/Laporan/create', '\App\Modules\Laporan\Controllers\Laporan::create/', ['filter' => 'role:admin']);
 $routes->add('/Laporan/ubah/(:num)', '\App\Modules\Laporan\Controllers\Laporan::ubah/$1', ['filter' => 'role:admin']);
